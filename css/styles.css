@@ -157,7 +157,7 @@ margin-left: auto;
      margin: 0 auto;
     padding-top: 188px;
     padding-bottom: 188px;
-    width: 1440px;
+    max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -305,7 +305,7 @@ margin-bottom: 72px;
 .team-names-job{
     padding-top: 32px;
     padding-bottom: 32px;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-names {
@@ -336,6 +336,7 @@ margin-bottom: 8px;
 
 .team-list-li{
     list-style-type: none;
+    justify-content: center;
 }
 
 .team-link-svg{
@@ -356,7 +357,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:hover{
-    background-color:#404BBF;
+    background-color:#404bbf;
 }
 
 /* =======PORTFOLIO==START========== */
@@ -383,7 +384,7 @@ transform: translateY(0%);
 }
 
 .portfolio-list-li:hover .portfolio-list-text{
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
 }
 
@@ -458,12 +459,13 @@ color: #434455;
     padding-right: 15px;
     margin: 0 auto;
     gap: 120px;
+    align-items: baseline;
 }
 
 .footer-container{
     width: 264px;
     height: 112px;
-    
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -519,6 +521,8 @@ color: #fff;
     gap: 16px;
 }
 
+.footer-link-item{}
+
 .footer-link{
 text-decoration: none;
 width: 40px;
@@ -531,8 +535,8 @@ justify-content: center;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover{
-background-color: #31D0AA;
+.footer-link:hover, .footer-link:focus{
+background-color: #31d0aa;
 }
 
 .footer-link-svg{
