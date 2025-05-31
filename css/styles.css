@@ -333,11 +333,12 @@ margin-bottom: 8px;
     display: flex;
     gap: 24px;
     padding: 0 16px;
+    justify-content: center;
 }
 
 .team-list-link-li{
     list-style-type: none;
-    justify-content: center;
+    
 }
 
 .team-link-svg{
@@ -357,7 +358,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.team-link:hover{
+.team-link:hover, .team-link:focus{
     background-color:#404bbf;
 }
 
